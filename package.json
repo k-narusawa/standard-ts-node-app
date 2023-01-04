@@ -7,6 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "watch": "ts-node-dev --respawn src/server.ts",
     "build": "tsc",
     "clean": "rm -rf dist",
     "format": "npx prettier --config ./.prettierrc --write src/index.ts"
